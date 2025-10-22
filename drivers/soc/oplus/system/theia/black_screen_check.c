@@ -98,7 +98,7 @@ static void get_blackscreen_check_dcs_logmap(char* logmap)
 }
 
 //if the error id contain current pid, we think is a normal resume
-static bool is_normal_resume()
+static bool is_normal_resume(void)
 {
 	char current_pid_str[32];
 	sprintf(current_pid_str, "%d", get_systemserver_pid());
