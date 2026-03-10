@@ -110,7 +110,6 @@ OPLUS_FEATURE_RT_INFO
 
 
 $(foreach myfeature,$(ALLOWED_MCROS),\
-         $(warning make $(myfeature) to be a macro here) \
          $(eval KBUILD_CFLAGS += -D$(myfeature)) \
          $(eval KBUILD_CPPFLAGS += -D$(myfeature)) \
          $(eval CFLAGS_KERNEL += -D$(myfeature)) \
@@ -231,5 +230,4 @@ CFLAGS_KERNEL +=   -DOP_8150_ADAPT
 CFLAGS_MODULE +=   -DOP_8150_ADAPT
 export CONFIG_PROJECT_INFO=y
 endif
-
 
