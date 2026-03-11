@@ -165,6 +165,7 @@ static int oplus_nfc_remove(struct platform_device *pdev)
 
 static const struct of_device_id onc[] = {
 	{.compatible = "oplus-nfc-chipset", },
+	{.compatible = "oppo-nfc-chipset", },
 	{},
 };
 

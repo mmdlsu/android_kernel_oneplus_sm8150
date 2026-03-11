@@ -135,7 +135,7 @@
 
 	//#ifdef OPLUS_FEATURE_BRINGUP
 	nfc_chipset {
-		compatible = "oplus-nfc-chipset";
+		compatible = "oppo-nfc-chipset", "oplus-nfc-chipset";
 		chipset-18857 = "NQ330";
 		chipset-18855 = "NQ330";
 		chipset-18853 = "NQ330";
