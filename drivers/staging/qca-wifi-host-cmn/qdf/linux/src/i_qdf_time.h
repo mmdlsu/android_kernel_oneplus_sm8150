@@ -36,9 +36,6 @@
 #ifdef MSM_PLATFORM
 #include <asm/arch_timer.h>
 #endif
-#ifdef CONFIG_CNSS
-#include <net/cnss.h>
-#endif
 
 typedef unsigned long __qdf_time_t;
 typedef ktime_t  __qdf_ktime_t;
@@ -318,7 +315,7 @@ static inline uint64_t __qdf_get_bootbased_boottime_ns(void)
 #elif (LINUX_VERSION_CODE >= KERNEL_VERSION(3, 17, 0))
 static inline uint64_t __qdf_get_bootbased_boottime_ns(void)
 {
-	return ktime_get_boot_ns();
+	return ktime_get_boottime_ns();
 }
 
 #else
